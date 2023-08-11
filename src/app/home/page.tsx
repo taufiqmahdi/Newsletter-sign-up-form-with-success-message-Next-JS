@@ -6,13 +6,14 @@ import Link from "next/link";
 import { Dispatch, FormEvent, SetStateAction } from "react";
 
 interface Props {
-  email: string;
-  onEmailChange: Dispatch<SetStateAction<string>>;
+  params: {
+    email: string;
+    onEmailChange: Dispatch<SetStateAction<string>>;
+  }
 }
 
-export default function Page(props: Props) {
-  const {email} = props;
-  const {onEmailChange} = props;
+export default function Page({params}: Props) {
+  const {email, onEmailChange} = params;
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
