@@ -13,6 +13,10 @@ interface Props {
 
 const Page = ({params}: Props) => {
     const {email, onEmailChange} = params;
+
+    const handleClick = () => {
+        onEmailChange('')
+      }
     
 
   return (
@@ -37,9 +41,9 @@ const Page = ({params}: Props) => {
                     </div>
                 </div>
             </div>
-            <a href="/" className="bg-charcoalGrey hover:bg-tomato rounded-lg px-4 py-4 text-white font-semibold text-center">
+            <button onClick={handleClick} className="bg-charcoalGrey hover:bg-tomato rounded-lg px-4 py-4 text-white font-semibold text-center">
                 Dismiss message
-            </a>
+            </button>
         </div>
     </main>
   )
