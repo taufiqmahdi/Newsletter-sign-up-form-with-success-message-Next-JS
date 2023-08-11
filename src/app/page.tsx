@@ -14,7 +14,7 @@ export default function Page() {
 
   return (
     <>
-      {email == '' ? (<Home params={{onEmailChange: setEmail, email: email}} />) : (<Confirmed email={email} onEmailChange={setEmail} />)}
+      {email == '' ? (<Home params={{onEmailChange: setEmail, email: email}} />) : (<Confirmed params={{onEmailChange: setEmail, email: email}} />)}
     </>
   );
 }

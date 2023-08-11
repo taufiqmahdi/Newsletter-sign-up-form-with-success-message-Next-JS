@@ -3,12 +3,14 @@ import iconSuccess from "../../components/assets/icon-success.svg"
 import { Dispatch, SetStateAction } from "react";
 
 interface Props {
-    email: string;
-    onEmailChange: Dispatch<SetStateAction<string>>;
+    params: {
+        email: string;
+        onEmailChange: Dispatch<SetStateAction<string>>;
+      }
   }
 
-const Page = (props: Props) => {
-    const {email} = props;
+const Page = ({params}: Props) => {
+    const {email, onEmailChange} = params;
     
 
   return (
