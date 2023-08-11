@@ -10,7 +10,7 @@ interface Props {
   onEmailChange: Dispatch<SetStateAction<string>>;
 }
 
-export default function Home(props: Props) {
+export default function Page(props: Props) {
   const {email} = props;
   const {onEmailChange} = props;
 

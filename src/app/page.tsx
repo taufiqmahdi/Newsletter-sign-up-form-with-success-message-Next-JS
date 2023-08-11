@@ -9,7 +9,7 @@ import Home from "./home/page"
 import Confirmed from "./confirmed/page"
 import { useState } from "react";
 
-export default function Index() {
+export default function Page() {
   const [email, setEmail] = useState('')
 
   return (

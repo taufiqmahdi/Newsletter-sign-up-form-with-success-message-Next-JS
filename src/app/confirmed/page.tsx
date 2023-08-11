@@ -7,7 +7,7 @@ interface Props {
     onEmailChange: Dispatch<SetStateAction<string>>;
   }
 
-const Confirmed = (props: Props) => {
+const Page = (props: Props) => {
     const {email} = props;
     
 
@@ -41,4 +41,4 @@ const Confirmed = (props: Props) => {
   )
 }
 
-export default Confirmed
+export default Page
