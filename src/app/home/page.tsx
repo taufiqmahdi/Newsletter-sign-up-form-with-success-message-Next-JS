@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import bannerMobile from "../../components/assets/illustration-sign-up-mobile.svg";
 import bannerDesktop from "../../components/assets/illustration-sign-up-desktop.svg";

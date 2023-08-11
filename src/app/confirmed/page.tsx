@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import iconSuccess from "../../components/assets/icon-success.svg"
 import { Dispatch, SetStateAction } from "react";
